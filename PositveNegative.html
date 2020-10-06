@@ -1,0 +1,40 @@
+<DOCTYPE html>
+        <html>
+      <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width,initian-scale-1">
+      </head>
+      <body>
+          <h2>js program to check from two given integer, if one is positive and one is negative :</h2>
+          <div>
+                Enter first number: <input type="text" id="num1" ><br><br>
+                Enter second number: <input type="text" id="num2" ><br><br>
+                <button type="button" onclick="check()">submit</button>
+          </div>
+          <script>
+             function check(){
+                var no1=Number(document.getElementById("num1").value);
+             var no2=Number(document.getElementById("num2").value);
+             if(isNaN(no1,no2)){
+                    alert("Enter integer number only");
+             }
+             else{
+               if(no1 >= 0 && no2 >= 0){
+                   alert(no1+" is positive"+"   and   "+ no2+" is positive");
+               }
+    
+               else if(no1>0 && no2<0){
+                alert(no1+" is Positive"+"   and   "+ no2+" is Negative");
+               }
+               else if(no1<0 && no2>0){
+                alert(no1+" is Negative"+"   and   "+ no2+" is Positive");
+               }
+               else{
+                alert(no1+" is Negative"+"   and   "+ no2+" is Negative");
+               }
+               }
+             }
+          </script>
+      </body>
+    </html>
+    

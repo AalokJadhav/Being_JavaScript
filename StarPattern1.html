@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        k = 6;
+        for (i = 0; i <= k; i++) {
+            for (j = 0; j <= k; j++) {
+                if (j == i || j == k) {
+                    document.write('*');
+                } else {
+                    document.write('&nbsp;');
+                }
+            }
+            document.write('<br>');
+
+            k = k-1;
+        }
+
+
+        l = k/2;
+        m = 1;
+        for(i=0; i<=k; i++){
+            for(j=0; j<=k; j++){
+                if(j==l-m || j== l+m){
+                    document.write('*');
+                } else{
+                    document.write('&nbsp;')
+                }
+            }
+            document.write('<br>');
+            m = m+1;
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>write a js function to dispaly href and type attribute of the specified name :</h2>
+    <br>
+    <a id="angular" href="https://angular.io/" type="text">Go To Angular</a><br><br>
+    <button onclick="fun()">Get Attribute</button>
+    <script>
+    function fun() {
+        var a = document.getElementById("angular").href;
+        var b = document.getElementById("angular").type;
+
+        alert(a);
+        alert(b);
+
+    }
+    </script>
+</body>
+</html>

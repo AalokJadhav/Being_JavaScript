@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // var i;
+        // var j;
+        // n = 5;
+
+
+        // for (i = 0; i <n; i++) {
+        //     // for (j = 0; j <= i; j++) {
+        //     //     document.write('*  ');
+        //     // }
+
+        //     for (j = n - i; j > 1; j--) {
+        //         document.write('&nbsp;');
+        //     }
+        //     for (j = 0; j <= i; j++) {
+        //         document.write('* ');
+        //     }
+        //     document.write('<br>');
+        // }
+
+        var i;
+        var j;
+        var k;
+        var rows = 4;
+        var arr1 = new Array();
+        var arr = new Array();
+
+
+
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= i; j++) {
+                arr.push(j);
+                document.write(j);
+
+            }
+            document.write('<br>');
+        }
+
+        for (i = 3; i >= 1; i--) {
+            for (j = 1; j <= i; j++) {
+                    arr1.push(j);
+                    document.write(j);
+
+                }
+                document.write('<br>');
+
+            }
+
+
+
+
+
+            var k;
+            var l;
+            var arr2 = new Array();
+
+
+            for(k=1; k<=3;k++){
+                for(l=k;l>=1;l--){
+                    arr2.push(l);
+                    document.write(l);
+                    document.write('&nbsp;')
+
+                }
+
+                document.write('<br>');
+
+
+            }
+
+
+
+
+
+            for ( var row = 1; row <= 10; ++row )
+{
+document.writeln( "<br />" );
+
+for ( var column = 1; column <= row; ++column )
+{
+
+document.write( "* " );
+
+}
+}
+
+"</br>"
+document.writeln("<br>(b)");
+
+for ( var row = 1; row <= 10; ++row )
+{
+document.writeln( "<br />" );
+
+for ( var column = 1; column <= 11; ++column )
+{
+
+if ( column > row )
+{
+
+document.write( " " );
+}
+}
+}
+"</br>"
+document.writeln("<br>(c)");
+for ( var row = 1; row <= 10; ++row )
+{
+document.writeln( "<br />" );
+for ( var column = 11-row; column < 10; ++column )
+{
+document.write( "&nbsp;&nbsp;&nbsp;" );
+}
+for ( var column = 1; column <= 11-row; ++column )
+{
+document.write( " " );
+}
+}
+"</br>"
+document.writeln("<br>(d)");
+
+for ( var row = 1; row <= 10; ++row )
+{
+document.writeln( "<br />" );
+for ( var column = 1; column < 11-row; ++column )
+{
+document.write( "&nbsp;&nbsp;&nbsp;" );
+}
+for ( var column = 11-row; column <= 10; ++column )
+{
+document.write( "* " );
+}
+}
+
+
+        
+
+
+    </script>
+</body>
+
+</html>

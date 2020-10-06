@@ -1,0 +1,42 @@
+<DOCTYPE html>
+
+    <head>
+    </head>
+
+    <body>
+            <h2>display reading status of book :</h2>
+
+        <script>
+            var book = [
+                {
+                    author: "Prashnt",
+                    title: "Prashant's book",
+                    status: "true"
+                },
+
+                {
+                    author: "Aalok",
+                    title: "Aalok's book",
+                    status: "true"
+                },
+
+                {
+                    author: "Mayur",
+                    title: "Mayur's book",
+                    status: "false"
+                },
+
+            ];
+
+            for (var i = 0; i < book.length; i++) {
+                if (book[i].status === "true") {
+                    document.write("U Read " + book[i].title + " By " + book[i].author, "<br>");
+                }
+                else {
+                    document.write("U Still Reading The Book " + book[i].title, "<br>");
+                }
+
+            }
+        </script>
+    </body>
+    <html>

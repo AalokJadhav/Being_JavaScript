@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="name">Aalok</p>
+    <p class="surname">Jadhav</p>
+    <p>Pune</p>
+    <p>Maharashtra</p>
+
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <script>
+
+        // acess elements by ID
+        var a = document.getElementById("name").innerHTML;
+        document.write(a);
+
+        // acess elements by ClassName
+        // var b = document.getElementsByClassName("surname")[2].innerHTML;
+        // document.write(b);
+
+
+        // acess elements by tagName
+        var c = document.getElementsByTagName("p");
+        document.write(c);
+        console.log(c);
+
+
+        // acess elements by first elements
+        var p = document.querySelector('p').innerHTML;
+        document.write(p);
+
+
+        //access children of body
+        var child = document.body.children;
+        console.log(child);
+
+
+        // add a new child in the body
+        var para = document.createElement('p');
+        var textnode = document.createTextNode("This is new para");
+        para.appendChild(textnode);
+        console.log(para);
+        document.body.appendChild(para);
+
+
+        // access firstchild and lastchild
+        var list = document.querySelector('ul');
+        console.log(list)
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+
+
+        // access sliblings
+        // var firstsiblings = name.nextElementSibling.nextElementSibling;
+        // console.log(firstsiblings);
+
+        console.log(list.parentNode);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

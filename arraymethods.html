@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array menhods :</h1><br><br>
+    <h3>Array = ['Aalok' , 'Prashant' , 'Mayur']</h3><br><br>
+    <script>
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        var length = array.length;
+
+        document.write(length);
+        document.write("------------For length of the array-----<b>array.length</b><br><br>");
+
+        array.sort();
+        document.write(array);
+        document.write("------------array sort in ascending order-----<b>array.sort()</b><br><br>");
+
+        array.pop();
+        document.write(array);
+        document.write("------------array pop/delete from last-----<b>array.pop()</b><br><br>");
+
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        array.push("Vaibhav");
+        document.write(array);
+        document.write("------------array push/add to the last-----<b>array.push()</b><br><br>");
+
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        array.shift();
+        document.write(array);
+        document.write("------------array shift/delete from start-----<b>array.shift()</b><br><br>");
+
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        array.unshift("Bhupen");
+        document.write(array);
+        document.write("------------array unshift/add from start-----<b>array.unshift()</b><br><br>");
+
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        array.reverse();
+        document.write(array);
+        document.write("------------array reverse -----<b>array.reverse()</b><br><br>");
+
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        var check = Array.isArray(array);
+        document.write(check);
+        document.write("------------determines weather the passed value is array or not ie true/false-----<b>Array.isArray</b><br><br>");
+
+
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        var array1 = ['Bhupen', 'Aadi', 'Jeet'];
+        document.write(array.concat(array1));
+        document.write("------------concat/together given two arrays-----<b>array.concat(array1)</b><br><br>");
+
+        var array = ['Aalok', 'Prashant', 'Mayur'];
+        document.write(array.indexOf("prashant"));
+        document.write("------------find index of given array-----<b>array.indexOf(prashant)</b><br><br>");
+
+
+        const arr = [1, 2, 3, 4, 5, 6];
+        arr.forEach(item => {
+            document.write(item);
+        });
+        document.write("------------This method can help you to loop over array's items-----<b>array.forEach</b><br><br>")
+
+
+        const arr1 = [1, 2, 3, 4, 5, 6];
+        var a = arr.includes(2);
+        var b = arr.includes(7);
+        document.write(a, '<br>');
+        document.write(b);
+        document.write("------------This method check if array includes the item passed in the method.-----<b>array.includes(2)</b><br><br>")
+
+
+        const arr2 = [1, 2, 3, 4, 5, 6];
+        // item(s) greater than 3
+        const filtered = arr.filter(num => num > 3);
+        document.write(filtered, '<br>'); // output: [4, 5, 6]
+        document.write(arr2); // output: [1, 2, 3, 4, 5, 6]
+        document.write("------------This method create new array with only elements passed condition inside the provided function-----<b>arr.filter</b><br><br>")
+
+
+        const arr3 = [1, 2, 3, 4, 5, 6];
+        // add one to every element
+        const oneAdded = arr.map(num => num + 1);
+        document.write(oneAdded, '<br>'); // output [2, 3, 4, 5, 6, 7]
+        document.write(arr3); // output: [1, 2, 3, 4, 5, 6]
+        document.write("------------This method create new array by calling the provided function in every element.-----<b>arr.map</b><br><br>")
+
+
+        const arr4 = [1, 2, 3, 4, 5, 6];
+        const sum = arr.reduce((total, value) => total + value, 0);
+        document.write(sum); // 21
+        document.write("------------The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value-----<b>arr.reduce</b><br><br>")
+
+
+        const arr5 = [1, 2, 3, 4, 5, 6];
+        // at least one element is greater than 4?
+        const largeNum = arr.some(num => num > 4);
+        document.write(largeNum, '<br>'); // output: true
+        // at least one element is less than or equal to 0?
+        const smallNum = arr.some(num => num <= 0);
+        document.write(smallNum); // output: false
+        document.write("------------This method check if at least one of array's item passed the condition. If passed, it return 'true' otherwise 'false'.-----<b>arr.some</b><br><br>")
+
+
+
+        const arr6 = [1, 2, 3, 4, 5, 6];
+        // all elements are greater than 4
+        const greaterFour = arr.every(num => num > 4);
+        document.write(greaterFour, '<br>'); // output: false
+        // all elements are less than 10
+        const lessTen = arr.every(num => num < 10);
+        document.write(lessTen); // output: true
+        document.write("------------This method check if all array's item passed the condition. If passed, it return 'true' otherwise 'false'.-----<b>arr.every</b><br><br>")
+
+
+
+
+        const name = 'winteriscoming';
+        const nameArray = Array.from(name);
+        document.write(name, '<br>'); // output: frugence
+        document.write(nameArray); // output: ['f', 'r', 'u', 'g', 'e', 'n', 'c', 'e']
+        document.write("------------This change all thing that are array-like or iterable into true array especially when working with DOM, so that you can use other array methods like reduce, map, filter and so on.-----<b>arr.from()</b><br><br>")
+
+
+        const nums = Array.of(1, 2, 3, 4, 5, 6);
+        document.write(nums); // output: [1, 2, 3, 4, 5, 6]
+        document.write("------------This create array from every arguments passed into it.-----<b>arr.of()</b><br><br>")
+
+
+        var arr7 = new Array("orange", "mango", "banana", "sugar");        
+        var str = arr7.toString();
+        document.write("Returned string is : " + str );
+        document.write("------------Returns a string representing the array.-----<b>arr.toString()</b><br><br>")
+
+    </script>
+</body>
+
+</html>

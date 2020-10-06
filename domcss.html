@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+    <h2 id="changecss">This is for DOM one css property</h2>
+    <br>
+    <h2 id="changecss1" style>This is for DOM multiple css property</h2>
+
+    <script>
+    // for set only for one css property
+    document.getElementById('changecss').style.color="red";
+
+    // for set multiple css property
+    document.getElementById('changecss1').setAttribute("style", "color: blue, background-color: pink, text-align: center, height: 100px" );
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Return First Name & Last Name :</h2>
+    <br>
+    First Name : <input type="text" name="fName" id="fname"><br><br>
+    Last Name  : <input type="text" name="lName"id="lname"><br><br>
+    <button type="submit" onclick="submit()">Submit</button>
+
+    <script>
+    function submit(){
+        var a = document.getElementById("fname").value
+        var b = document.getElementById("lname").value
+
+        document.write(a, " ");
+        document.write(b);
+    }
+    
+    </script>
+    
+</body>
+</html>

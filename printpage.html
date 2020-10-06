@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <div id="div1">This is div 1...</div><br>
+    <button onclick="myfun('div1')">Button 1</button><br><br>
+    <div id="div2">This is dive 2...</div><br>
+    <button onclick="myfun('div2')">Button 2</button>
+    <br><br>
+
+    <button onclick="myholepage()">Hole Page</button>
+
+    <script>
+    function myfun(paravalue)  {
+        var backup = document.body.innerHTML;
+        var divcontent = document.getElementById (paravalue).innerHTML;
+        document.body.innerHTML = divcontent;
+        window.print();
+        document.body.innerHTML = backup;
+
+    }
+
+
+    function myholepage()  {
+        window.print();
+    }
+    </script>
+</body>
+</html>

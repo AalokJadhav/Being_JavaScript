@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = new Date();
+        document.write(a);
+        document.write("<br>");
+
+        // month start with 0 for jan
+        var b = new Date(2019, 11, 5);
+        document.write(b);
+        document.write("<br>");
+
+        // get method
+        var c = new Date();
+        var month = c.getMonth();
+        var day = c.getDay();
+        var year = c.getUTCFullYear();
+        document.write(year + "/" + month + "/" + day);
+        document.write("<br>");
+
+        // set method
+        var d = new Date();
+        d.setMonth(11);
+        d.setDate(20);
+        d.setUTCFullYear(2020, 11, 3);
+        document.write(d);
+        document.write("<br>");
+
+
+    </script>
+</body>
+
+</html>
